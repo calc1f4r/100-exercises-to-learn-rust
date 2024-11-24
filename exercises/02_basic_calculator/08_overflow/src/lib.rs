@@ -1,4 +1,4 @@
-// Customize the `dev` profile to wrap around on overflow.
+ // Customize the `dev` profile to wrap around on overflow.
 // Check Cargo's documentation to find out the right syntax:
 // https://doc.rust-lang.org/cargo/reference/profiles.html
 //
@@ -12,6 +12,8 @@ pub fn factorial(n: u32) -> u32 {
     }
     result
 }
+
+// overflow-checks=false
 
 #[cfg(test)]
 mod tests {
