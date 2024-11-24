@@ -1,6 +1,13 @@
 /// Return `true` if `n` is even, `false` otherwise.
+/// 
+/// Solution 1 
+// fn is_even(n: u32) -> bool {
+//     n%2==0
+// }
+
+// solution 2
 fn is_even(n: u32) -> bool {
-    todo!()
+    n%2==0
 }
 
 #[cfg(test)]
