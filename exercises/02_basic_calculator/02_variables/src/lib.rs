@@ -8,7 +8,7 @@
 pub fn speed(start: u32, end: u32, time_elapsed: u32) -> u32 {
     // TODO: define a variable named `distance` with the right value to get tests to pass
     //  Do you need to annotate the type of `distance`? Why or why not?
-    let distance=match end.checked_sub(start) {
+    let distance=match end.checked_sub(start) { // use pattern matching or it could be just end-start
         Some(val)=> val,
         None=>0,
     };
