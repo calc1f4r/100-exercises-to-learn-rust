@@ -4,6 +4,11 @@ pub struct Ticket {
     status: String,
 }
 
+
+
+// @note Every reference only takes 8 bytes in the memory where it is mutable or not 
+
+
 // TODO: based on what you learned in this section, replace `todo!()` with
 //  the correct **stack size** for the respective type.
 #[cfg(test)]
@@ -13,16 +18,16 @@ mod tests {
 
     #[test]
     fn u16_ref_size() {
-        assert_eq!(size_of::<&u16>(), todo!());
+        assert_eq!(size_of::<&u16>(), 8);
     }
 
     #[test]
     fn u64_mut_ref_size() {
-        assert_eq!(size_of::<&mut u64>(), todo!());
+        assert_eq!(size_of::<&mut u64>(), 8);
     }
 
     #[test]
     fn ticket_ref_size() {
-        assert_eq!(size_of::<&Ticket>(), todo!());
+        assert_eq!(size_of::<&Ticket>(), 8);
     }
 }
