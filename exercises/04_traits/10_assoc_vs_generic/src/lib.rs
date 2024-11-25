@@ -13,6 +13,29 @@
 // You don't have to though: it's perfectly okay to write three separate
 // implementations manually. Venture further only if you're curious.
 
+use num::pow::Pow;
+
+// use num::traits::{checked_pow};
+trait Power<T>{
+    fn power(self,n:T)->u32; // made it generic 
+}
+
+impl Power<u32> for u32{
+    fn power(self,n:u32)->u32 {
+        self.pow(n) // 
+    }
+}
+impl Power<u16> for u32{
+    fn power(self,n:u16)->u32 {
+        self.pow(n.into()) 
+    }
+}
+impl Power<&u32> for u32{
+    fn power(self,n:&u32)->u32 {
+        self.pow(*n) // derefernce it 
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::Power;

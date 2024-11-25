@@ -10,13 +10,15 @@ pub struct Ticket {
     status: String,
 }
 
+
+// Use of trim  
 impl Ticket {
     pub fn title(&self) -> &str {
-        todo!()
+        &self.title.trim() // Use of trim 
     }
 
     pub fn description(&self) -> &str {
-        todo!()
+        &self.description.trim()
     }
 }
 
