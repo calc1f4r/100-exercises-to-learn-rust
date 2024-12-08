@@ -10,11 +10,10 @@ pub struct Ticket {
     status: String,
 }
 
-
-// Use of trim  
+// Use of trim
 impl Ticket {
     pub fn title(&self) -> &str {
-        &self.title.trim() // Use of trim 
+        &self.title.trim() // Use of trim
     }
 
     pub fn description(&self) -> &str {

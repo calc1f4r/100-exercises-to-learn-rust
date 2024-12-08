@@ -1,4 +1,4 @@
- // Customize the `dev` profile to wrap around on overflow.
+// Customize the `dev` profile to wrap around on overflow.
 // Check Cargo's documentation to find out the right syntax:
 // https://doc.rust-lang.org/cargo/reference/profiles.html
 //

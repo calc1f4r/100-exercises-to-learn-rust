@@ -5,8 +5,7 @@
 // different _semantics_. We'll cover those differences later in the course when we talk about ordered
 // collections (e.g. BTreeMap).
 
-
-// ORD is the trait which is used for comparing 
+// ORD is the trait which is used for comparing
 // PartialORD is the trait which is used for >=,<,<=
 /// Return the minimum of two values.
 pub fn min<T: PartialOrd>(left: T, right: T) -> T {

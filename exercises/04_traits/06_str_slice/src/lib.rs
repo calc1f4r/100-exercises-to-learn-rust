@@ -59,4 +59,3 @@ mod tests {
         assert_eq!(TypeId::of::<str>(), ticket.status().type_id());
     }
 }
-

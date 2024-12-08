@@ -1,8 +1,25 @@
+
 // TODO: `easy_ticket` should panic when the title is invalid.
 //   When the description is invalid, instead, it should use a default description:
 //   "Description not provided".
 fn easy_ticket(title: String, description: String, status: Status) -> Ticket {
-    todo!()
+    assert!(!title.is_empty(),"Title cannot be empty");
+    assert!(title.len()<50,"Title cannot be longer than 50 bytes");
+
+
+     if description.is_empty() || description.len() > 500{
+           let  description="Description not provided".to_string();
+           return Ticket{
+               title,
+               description,
+               status
+            }
+        }
+         Ticket{
+               title,
+               description,
+               status
+            }
 }
 
 #[derive(Debug, PartialEq, Clone)]

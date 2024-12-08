@@ -8,20 +8,20 @@ struct Ticket {
 
 // TODO: Implement the `PartialEq` trait for `Ticket`.
 
-
 // Implemented PartialEq for The ticket struct
 impl PartialEq for Ticket {
     fn eq(&self, other: &Self) -> bool {
+        if self.title != other.title {
+            return false;
+        }
 
-        if self.title != other.title { return false; }
-        
-        if self.description!=other.description{
-            return false
+        if self.description != other.description {
+            return false;
         }
-        if self.status!=other.status{
-            return false
+        if self.status != other.status {
+            return false;
         }
-        return true
+        return true;
     }
 
     fn ne(&self, other: &Self) -> bool {

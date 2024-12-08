@@ -6,7 +6,7 @@ pub fn summary(ticket: Ticket) -> (Ticket, Summary) {
     // just gave a clone of the ticket not the whole ticket ownership
 }
 
-// derived a clone macro for the ticket 
+// derived a clone macro for the ticket
 #[derive(Clone)]
 pub struct Ticket {
     pub title: String,

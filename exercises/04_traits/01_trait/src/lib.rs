@@ -3,11 +3,9 @@
 //
 // Then implement the trait for `u32` and `i32`.
 
-
-trait IsEven  {
-    fn is_even(self)->bool;
+trait IsEven {
+    fn is_even(self) -> bool;
 }
-
 
 impl IsEven for u32 {
     fn is_even(self) -> bool {

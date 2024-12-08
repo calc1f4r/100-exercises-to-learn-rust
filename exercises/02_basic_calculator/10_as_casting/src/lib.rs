@@ -24,8 +24,8 @@ mod tests {
         // You could solve this by using exactly the same expression as above,
         // but that would defeat the purpose of the exercise. Instead, use a genuine
         // `i8` value that is equivalent to `255` when converted to `u8`.
-                #[allow(overflowing_literals)]
-        let y: i8 = {255 as i8};
+        #[allow(overflowing_literals)]
+        let y: i8 = { 255 as i8 };
 
         assert_eq!(x, y);
     }

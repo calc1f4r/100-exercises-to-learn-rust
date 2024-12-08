@@ -4,10 +4,7 @@ pub struct Ticket {
     status: String,
 }
 
-
-
-// @note Every reference only takes 8 bytes in the memory where it is mutable or not 
-
+// @note Every reference only takes 8 bytes in the memory where it is mutable or not
 
 // TODO: based on what you learned in this section, replace `todo!()` with
 //  the correct **stack size** for the respective type.

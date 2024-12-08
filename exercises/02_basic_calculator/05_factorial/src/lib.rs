@@ -10,13 +10,12 @@
 //
 // Use only what you learned! No loops yet, so you'll have to use recursion!
 
-
-// 
-fn factorial(n:u32)->u32{
-    if n==0 || n==1 {
-        return 1 // return 1 if the input is among 0 or 1 
+//
+fn factorial(n: u32) -> u32 {
+    if n == 0 || n == 1 {
+        return 1; // return 1 if the input is among 0 or 1
     }
-    return n*factorial(n-1) // mutliply the number
+    return n * factorial(n - 1); // mutliply the number
 }
 #[cfg(test)]
 mod tests {

@@ -4,19 +4,16 @@
 //  Look at the compiler error to get familiar with what it looks like.
 //  Then delete the code below and move on to the next exercise.
 
-
-
-// Learning : You can't do this directly the correct way to do it is like this 
+// Learning : You can't do this directly the correct way to do it is like this
 
 trait PartialEq {
-    fn eq(&self,_other:&Self)->bool;
+    fn eq(&self, _other: &Self) -> bool;
 }
 
-impl PartialEq for u32{
-    fn eq(&self,_other:&Self)->bool{
+impl PartialEq for u32 {
+    fn eq(&self, _other: &Self) -> bool {
         todo!()
     }
-
 }
 // impl PartialEq for u32 {
 //     fn eq(&self, _other: &Self) -> bool {

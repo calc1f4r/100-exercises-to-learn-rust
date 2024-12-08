@@ -36,9 +36,14 @@ impl Ticket {
         }
     }
     pub fn assigned_to(&self) -> Option<&String> {
-        todo!()
+        let value =match self.status {
+            Status::InProgress { ref assigned_to }=> Some(assigned_to),
+            _=>None
+        };
+        value
+        }
     }
-}
+
 
 #[cfg(test)]
 mod tests {

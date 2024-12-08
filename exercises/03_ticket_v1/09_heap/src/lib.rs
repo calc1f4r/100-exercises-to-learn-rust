@@ -13,14 +13,11 @@ mod tests {
 
     #[test]
     fn string_size() {
-
         // why 24 ?
 
-
-        // pointer -> usize 
+        // pointer -> usize
         // length -> usize
-        // capacity -> usize 
-
+        // capacity -> usize
 
         // on a 64 system each usize = 8 bytes
         assert_eq!(size_of::<String>(), 24);

@@ -38,8 +38,21 @@ impl Ticket {
         }
     }
     pub fn assigned_to(&self) -> &str {
-        todo!()
+        // TODO: Implement `Ticket::assigned_to`.
+        //  Return the name of the person assigned to the ticket, if the ticket is in progress.
+        //  Panic otherwise.
+        // match self.status {
+        //     Status::ToDo => panic!("Only `In-Progress` tickets can be assigned to someone"),
+        //     Status::Done => panic!("Only `In-Progress` tickets can be assigned to someone"),
+        //     Status::InProgress { ref assigned_to } => assigned_to,
+        // }
+
+        match self.status {
+            Status::InProgress { ref assigned_to } => assigned_to, // has extracted all the data from here
+            _ => panic!("Only `In-Progress` tickets can be assigned to someone"),
+        }
     }
+
 }
 
 #[cfg(test)]
